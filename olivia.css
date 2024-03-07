@@ -237,11 +237,13 @@ min-height: 190px;
 {
     .video-grid{
         grid-template-columns: 1fr;
+        overflow: none;
     }
 }
 @media(max-width:950px){
     .video-grid{
         margin-left:60px;
+        overflow: none;
     }
 }
 .part1{
@@ -261,16 +263,33 @@ min-height: 190px;
     grid-template-columns: 1fr 1fr;
     row-gap:30px;
     column-gap: 20px;
+    height:730px;
+    overflow: scroll;
+    overflow-x: hidden;
+    margin-bottom: 8px;
+}
+.peter::-webkit-scrollbar {
+    width: 10px; /* adjust as needed */
+    background-color: transparent;
 }
 @media(max-width:760px){
     .peter{
-     display: grid;
-    grid-template-columns:  1fr;
+    display:grid;
+    grid-template-columns:1fr;
+    overflow: none;
     }
 }
 .peterchan{
     display: grid;
     grid-template-columns: 1fr ;
+    overflow: scroll;
+    overflow-x: hidden;
+    height: 730px;
+    margin-bottom: 8px;
+}
+.peterchan::-webkit-scrollbar {
+    width: 10px; /* adjust as needed */
+    background-color: transparent;
 }
 .bodeola{
     display: flex;
